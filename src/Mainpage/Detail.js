@@ -26,7 +26,10 @@ const Detail =()=>{
         <h4>Ingridients</h4>
         <hr/>
         <div>
-            <table>
+
+           
+            
+                        <table>
                 <tbody>
                     
                     <tr>
