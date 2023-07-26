@@ -9,7 +9,7 @@ const Detail =()=>{
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${paramas.idMeal}`)
         .then((Response)=>Response.json())
         .then((data)=>{setDetail(data.meals)
-        console.log(detail)})
+       })
     }
     useEffect(()=>{
         Fetchdetail();
@@ -19,7 +19,7 @@ const Detail =()=>{
             {detail && detail.length >0 && detail.map((value)=>(
 <div className='detailcard'>
     <div className='detailimage'>
-        <img src ={value.strMealThumb}/>
+        <img src ={value.strMealThumb} alt='meal'/>
     </div>
     <div className='detaildescrption'>
         <h2>{value.strMeal}</h2>
@@ -27,8 +27,6 @@ const Detail =()=>{
         <hr/>
         <div>
 
-           
-            
                         <table>
                 <tbody>
                     
